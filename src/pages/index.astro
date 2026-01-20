@@ -1,0 +1,39 @@
+---
+//JS
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Inicio" description="Bienvenida a mi blog de JavaScript">
+  <h2 class="text-2xl font-semibold mb-4">Bienvenida a mi blog 🌷</h2>
+  <p class="mb-6">
+    Aquí comparto mi aprendizaje de JavaScript paso a paso, con ejemplos, juegos
+    y explicaciones sencillas.
+  </p>
+
+  <h3 class="text-xl font-bold mb-2">Temas disponibles:</h3>
+  <ul class="list-disc pl-6 space-y-2">
+    <li>
+      <a
+        href="/blog/condicionales"
+        class="text-color-secundario hover:underline"
+        >Condicionales y juego del número secreto</a>
+    </li>
+    <li>
+      <a href="/blog/variables-y-tipos" class="text-color-secundario hover:underline"
+        >Variables y tipos de datos</a>
+    </li>
+    <li>
+      <a href="/blog/funciones-basicas" class="text-color-secundario hover:underline"
+        >Funciones básicas</a>
+    </li>
+  </ul>
+
+  <h3 class="text-xl font-bold mt-8 mb-2">¿Qué es JavaScript?</h3>
+  <p class="bg-color-primario text-white p-4 rounded-lg shadow">
+    JavaScript es un lenguaje de programación que permite crear páginas web
+    interactivas. Es el motor detrás de botones que reaccionan, formularios que
+    validan datos, juegos en el navegador y mucho más. Junto con HTML y CSS,
+    forma la base del desarrollo web moderno. Aprender JavaScript te abre las
+    puertas a crear experiencias digitales dinámicas y personalizadas.
+  </p>
+</Layout>

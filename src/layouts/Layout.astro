@@ -1,27 +1,32 @@
 ---
 import "../styles/global.css";
-
+const { title } = Astro.props;
 ---
 
-<!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <style lang="scss"></style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-gray-800 font-sans">
+    <header class="bg-color-primario p-6 text-white shadow-md rounded-b-xl">
+      <h1 class="text-3xl font-bold">🌸 Blog de Gabriela</h1>
+      <p class="text-sm italic">Aprendiendo JavaScript con ternura</p>
+    </header>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <main
+      class="max-w-3xl mx-auto p-6 mt-6 bg-white rounded-xl shadow-lg border border-color-primario"
+    >
+      <slot />
+    </main>
+
+    <footer class="p-4 mt-6 text-center text-sm text-white bg-color-secundario">
+      ✨ Con cariño, Gabriela © 2026 ✨
+    </footer>
+  </body>
+</html>
