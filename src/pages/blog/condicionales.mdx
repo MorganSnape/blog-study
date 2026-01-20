@@ -1,9 +1,13 @@
----
-title: "Condicionales en JavaScript y el juego del número secreto"
-date: "2026-01-19"
-layout: ../../layouts/Layout.astro
----
+
+
+import Layout from "../../layouts/Layout.astro";
 import NumeroSecreto from "../../components/SecretGame.jsx";
+
+<Layout 
+  title="Condicionales en JavaScript y el juego del número secreto"
+  headerTitle="Condicionales en JavaScript"
+  description="Condicionales"
+>
 
 # Condicionales en JavaScript
 
@@ -18,5 +22,8 @@ if (edad >= 18) {
 }
 ```
 
-# Juego interactivo Aquí tienes el juego del número secreto integrado en el blog: 
+# Juego interactivo Aquí tienes el juego del número secreto integrado en el blog:
+
 <NumeroSecreto />
+
+</Layout>
