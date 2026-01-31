@@ -1,0 +1,41 @@
+import Layout from "@/layouts/Layout.astro";
+import NumeroSecreto from "./_SecretGame.jsx";
+
+<Layout 
+  title="Condicionales en JavaScript y el juego del número secreto"
+  headerTitle="Condicionales en JavaScript"
+  description="Condicionales"
+>
+
+# Estructuras condicionales
+
+Al programar, uno de los conceptos fundamentales a dominar, son las estructuras condicionales, también conocidas como estructuras de control. Estas estructuas nos permiten decidir que parte de nuesrto código se ejecutará basado en ciertas condiciones.
+
+## if, else y else if
+
+La más básica de estas es **IF**, esta nos permite ejecutar un bloque de código solo si la condición es verdadera.
+
+### Estructura:
+
+```js
+if (condición) {
+  //código a ejecutar
+} else {
+  //Solo se ejecuta si las anteriores validaciones no son verdaderas
+}
+```
+
+### Ejemplo:
+
+```js
+let edad = 18;
+if (edad >= 18) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres menor de edad");
+}
+```
+
+<NumeroSecreto client:load />
+
+</Layout>

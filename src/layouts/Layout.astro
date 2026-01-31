@@ -1,6 +1,10 @@
 ---
 import "../styles/global.css";
-const { title, headerTitle = "🌸 Blog de Gabriela", description = "Aprendiendo JavaScript con ternura" } = Astro.props;
+const {
+  title,
+  headerTitle = "🌸 Blog de Gabriela",
+  description = "Aprendiendo JavaScript con ternura",
+} = Astro.props;
 ---
 
 <html lang="es">
@@ -20,7 +24,7 @@ const { title, headerTitle = "🌸 Blog de Gabriela", description = "Aprendiendo
     </header>
 
     <main
-      class="flex-1 max-w-3xl mx-auto p-6 mt-6 bg-white rounded-xl shadow-lg border border-color-primario"
+      class="flex-1 max-w-3xl mx-auto p-6 mt-6 bg-white rounded-xl shadow-lg"
     >
       <slot />
     </main>
