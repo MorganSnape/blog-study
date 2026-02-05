@@ -1,0 +1,35 @@
+import Layout from "@/layouts/Layout.astro";
+
+<Layout
+  title="Iteraciones con blucles"
+  headerTitle="Estructuras cíclicas o bucles"
+  description="Iteraciones con blucles"
+>
+## Ciclo for
+
+El ciclo o bucle for es una estructura de control que se utiliza para repetir un bloque de código el número determinado de veces que definamos.
+
+### Estructura
+
+```js
+for (variable; condicion; incremento) {
+  //código a ejecutar
+}
+```
+
+- **Variable:** Solo se ejecuta una vez, normalmente para crear un contador. La variable se puede llamar como gustes normalmente se usa i.
+- **Condición:** Se evalúa antes de cada repetición. Mientras esta sea _true_, el ciclo continua.
+
+* **Incremento** Se ejecuta al final de cada vuelta del ciclo define como se va a incremar de una en una de dos en dos etc.
+
+### Ejemplo
+
+```js
+let list = ["eat", "sleep", "code", "repeat"];
+
+for (let i = 0; i < list.length; i++) {
+  console.log(list[i];)
+}
+```
+
+</Layout>

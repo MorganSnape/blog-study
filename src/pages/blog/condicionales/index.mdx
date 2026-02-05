@@ -7,8 +7,6 @@ import NumeroSecreto from "./_SecretGame.jsx";
   description="Condicionales"
 >
 
-# Estructuras condicionales
-
 Al programar, uno de los conceptos fundamentales a dominar, son las estructuras condicionales, también conocidas como estructuras de control. Estas estructuas nos permiten decidir que parte de nuesrto código se ejecutará basado en ciertas condiciones.
 
 ## if, else y else if
@@ -37,5 +35,49 @@ if (edad >= 18) {
 ```
 
 <NumeroSecreto client:load />
+
+## Switch
+
+La condición switch en JavaScript es una estructura de control que permite ejecutar diferentes bloques de código según si el valor de una expresión es true.
+
+Es especialmente útil cuando necesitas manejar múltiples casos basados en el valor de una variable, proporcionando una alternativa más limpia y legible a múltiples declaraciones.
+
+### Estrucctura
+
+```js
+switch (expresión) {
+  case valor1:
+    //código a ejecutar
+    break;
+  case valor2:
+    //código a ejecutar
+    break;
+  default:
+    //código a si ninguno de los anteriores fue true
+    break;
+}
+```
+
+### Ejemplo
+
+```js
+let fruta = "Papaya";
+
+switch (fruta) {
+  case "Manzana":
+    console.log("Las manzanas cuestan 40mil el kilo");
+    break;
+  case "Papaya":
+    console.log("las papayas cuestan 15mil el kilo");
+    break;
+  case "Mangos": //Se pueden concatenar respuestas
+  case "Sandia":
+    console.log("Cada uno cuesta 25mil el kilo");
+    break;
+  default:
+    console.log(`lo siento, no tenemos ${fruta}`);
+    break;
+}
+```
 
 </Layout>
