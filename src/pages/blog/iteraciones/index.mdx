@@ -32,4 +32,72 @@ for (let i = 0; i < list.length; i++) {
 }
 ```
 
+## for of
+
+El ciclo for... of permite operar sobre un objeto iterable estos serian arrays y strings.
+
+El código que se termina ejecutando es por cada elemento dentro del iterable. En caso del array por cada posicion en caso del string letra por letra y se detiene cuando ya no quedan elementos.
+
+### Estructura
+
+```js
+for (variable of iterable) {
+  // código que se ejecuta por cada elemento
+}
+```
+
+### Ejemplo
+
+```js
+const frutas = ["manzana", "pera", "uva"];
+
+for (const fruta of frutas) {
+  console.log(fruta);
+}
+```
+
+## forIn
+
+El for...in es un bucle de JavaScript que se usa para recorrer las propiedades (claves) de un objeto.
+
+Los **objetos** se componen de propiedades y su respectivo valor.
+
+### Estructura
+
+```js
+for (variable in objeto que vamos a iterar) {
+  //código a ajecutar
+}
+```
+
+### Ejemplo
+
+```js
+const persona = {
+  nombre: "Ana",
+  edad: 25,
+  ciudad: "Bogotá",
+};
+
+for (caracteristica in persona) {
+  console.log(caracteristica);
+  // imrpime cada uno de las propiedades del objeto
+  'nombre'
+  'edad'
+  'ciudad'
+}
+
+for (caracteristica in persona) {
+  console.log(caracteristica, persona[caracteristica]);
+  // imprime cada una de las props y su valor
+
+  'nombre' 'Ana'
+  'edad' 25
+  'ciudad' 'Bogotá'
+}
+```
+
+## Ciclo While
+
+
 </Layout>

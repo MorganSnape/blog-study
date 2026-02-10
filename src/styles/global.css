@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 @theme {
-  --color-color-fondo: #f1ecce;
-  --color-color-primario: #bb8585;
-  --color-color-secundario: #a8a383;
+  --color-color-fondo: #efebe2;
+  --color-color-primario: #4f5d44;
+  --color-color-secundario: #adb79f;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f1ecce; /* Color de fondo suave */
+  background-color: #efebe2; /* Color de fondo suave */
   color: #333333; /* Color de texto principal */
   margin: 0;
   padding: 0;
@@ -25,7 +25,11 @@ h1 {
 h2 {
   font-size: 1.2rem;
   font-weight: 600;
+  color: white;
   margin: 1.25rem 0 0.75rem;
+  background: #a9b39b;
+  border-radius: 4px;
+  padding: 4px 20px;
 }
 
 h3 {
@@ -65,10 +69,15 @@ strong {
   font-weight: 600;
 }
 
-button{
+button {
   background: #bb8585;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
   cursor: pointer;
   border-radius: 0.25rem;
+}
+
+figure >img {
+  border-radius: 100px 100px 0px 0px;
+  border: 4px #4f5d44;
 }
