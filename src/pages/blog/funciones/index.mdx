@@ -1,0 +1,60 @@
+import Layout from "@/layouts/Layout.astro";
+
+<Layout
+  title="Funciones en JavaScript"
+  headerTitle="Funciones en JavaScript"
+  description="Funciones"
+>
+
+Las funciones en JavaScript son **bloques de código** reutilizables que permiten realizar tareas específicas una y otra vez. Imagina que son como piezas de Lego: puedes utilizarlas para crear múltiples objetos con las mismas piezas. Son una herramienta poderosa que, una vez definida, puede utilizarse repetidamente con distintos conjuntos de datos.
+
+## Ejemplo Descuentos de Black Friday.
+
+Quiero calcular el valor de una prenda descontando el porcentaje de descuento.
+
+### **Para crear esta función debo definir:**
+
+1. **¿Qué quiero? (Llamado en progrmación OUTPU salida)**
+
+- _Precio con descuento_
+
+2. **¿Qué datos tengo? (Llamado en programación INPUT entrada)**
+
+- _Precio: $100_
+- _Descuento: 20%_
+
+### Estructura
+
+```js
+function suma(a, b) {
+  return a + b;
+}
+
+suma(3, 5); // llamado de la función
+```
+
+## Anatomia de una función
+
+Esta contiene:
+
+- La **palabra clave** function
+- **Nombre** de la función
+- Los **parametros** que puede necesitar la función (Son opcionales)
+- **Llaves** son donde se escribe el código
+- **Return** (opcional) las funciones pueden simplemente ejecutar algo o puede retornar un valor.
+- **Llamado de la función** se usa nombre de la función, y dentro de los parentesis van los argumentos que son los valores que se le dan a los parametros.
+
+```js
+function caculateDiscontedPrice(price, discountPercentage) {
+  const discount = (price * discountPercentage) / 100;
+  return (priceWhithDiscount = price - discount);
+}
+const originalPrice = 20.0;
+const discountPercentage = 50;
+const finalPrice = caculateDiscontedPrice(originalPrice, discountPercentage);
+
+console.log(finalPrice);
+```
+## Diferencia entre Funciones y Métodos
+
+</Layout>

@@ -99,5 +99,52 @@ for (caracteristica in persona) {
 
 ## Ciclo While
 
+El método while es una estructura de control de flujo utilizada en programación para repetir un bloque de código mientras una condición específica sea verdadera es decir que cuando la condición pase a retornar false este ciclo para.
+
+Esta técnica permite realizar iteraciones eficientes, ejecutando una secuencia de instrucciones repetidamente hasta que la condición evaluada deje de cumplirse.
+
+Se debe tener cuidado porque de no realizar bien la condición puede generar un bucle infinito.
+
+### Estructura
+
+```js
+while (condición) {
+  //codigo a ejecutar
+}
+```
+
+### Ejemplo
+
+```js
+let contador = 0;
+
+while (contador <= 10) {
+  console.log(contador);
+  contador++; // contador crece + 1
+}
+```
+
+## Ciclo doWhile
+
+Ha diferencia del while este cliclo siempre se va a ejcutar minimo 1 vez y luego pasa a validar la condición. Si la condición da true este se repite hasta que la condición retorne false.
+
+### Estructura
+
+```js
+do {
+  //codigo a ejecutar
+} while (condición);
+```
+
+### Ejemplo
+
+```js
+let contador = 0;
+
+do {
+  console.log(contador);
+  contador++; // contador crece + 1
+} while (contador <= 10);
+```
 
 </Layout>
