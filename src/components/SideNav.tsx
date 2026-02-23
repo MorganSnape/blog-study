@@ -15,13 +15,11 @@ export default function SideNav() {
   }, []);
 
   return (
-    <aside className="bg-color-secundario p-4 rounded-sm w-60">
+    <aside className="p-4 rounded-sm w-60 sticky top-0 h-screen overflow-y-auto bg-color-secundario">
       <ul>
         {titles.map((title) => (
-          <li key={title.id}>
-            <a href={`#${title.id}`}>{title.text}</a>
-          </li>
-        ))}
+          <li key={title.id}> <a href={`#${title.id}`}>{title.text}</a>
+          </li>))}
       </ul>
     </aside>
   );
