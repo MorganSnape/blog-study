@@ -1,0 +1,28 @@
+import { useEffect, useState } from "react";
+
+export default function SideNav() {
+  const [titles, setTitles] = useState([]);
+
+  useEffect(() => {
+    const elements = Array.from(document.querySelectorAll("h2"));
+
+    const arrTitles = elements.map((title) => ({
+      id: title.id,
+      text: title.textContent,
+    }));
+
+    setTitles(arrTitles);
+  }, []);
+
+  return (
+    <aside className="bg-color-secundario p-4 rounded-sm w-60">
+      <ul>
+        {titles.map((title) => (
+          <li key={title.id}>
+            <a href={`#${title.id}`}>{title.text}</a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+}

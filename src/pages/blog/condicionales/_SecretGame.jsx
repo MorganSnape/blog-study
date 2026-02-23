@@ -25,10 +25,7 @@ export default function NumeroSecreto() {
   };
 
   return (
-    <div className="p-4 bg-color-fondo my-4">
-      <h2 className="m-0">
-        Juego del número secreto creado con el condicional if.
-      </h2>
+    <div className="px-4 bg-color-fondo">
       <div>
         <p>Adivina el número entre 1 y 10.</p>
         <form className="flex gap-2" onSubmit={(e) => verificarNumero(e)}>

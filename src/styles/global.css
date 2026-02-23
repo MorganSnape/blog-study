@@ -26,7 +26,7 @@ h2 {
   font-size: 1.2rem;
   font-weight: 600;
   color: white;
-  margin: 1.25rem 0 0.75rem;
+  margin: 2rem 0rem;
   background: #a9b39b;
   border-radius: 4px;
   padding: 4px 20px;
@@ -36,12 +36,15 @@ h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 1rem 0 0.5rem;
+  padding: 0px 4px;
+  background: #d7bcb5;
 }
 
 /* Párrafos */
 p {
   font-weight: 500;
   font-size: 1rem;
+  margin: 12px 0px;
 }
 
 /* Listas */
@@ -52,12 +55,14 @@ ol {
 }
 
 li {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0.5rem;
+  list-style-position: inside;
+  list-style: disc;
 }
 
 /* Enlaces */
 a {
-  color: #6b5b95; /* tono pastel violeta */
+  color: #000000; 
   text-decoration: none;
 }
 
@@ -77,7 +82,11 @@ button {
   border-radius: 0.25rem;
 }
 
-figure >img {
+figure > img {
   border-radius: 100px 100px 0px 0px;
   border: 4px #4f5d44;
+}
+pre {
+  padding: 12px 20px;
+  border-radius: 8px;
 }

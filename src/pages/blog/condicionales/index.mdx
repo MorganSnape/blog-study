@@ -1,7 +1,7 @@
-import Layout from "@/layouts/Layout.astro";
+import ArticuloLayout from "@/layouts/ArticuloLayout.astro";
 import NumeroSecreto from "./_SecretGame.jsx";
 
-<Layout 
+<ArticuloLayout 
   title="Condicionales en JavaScript y el juego del número secreto"
   headerTitle="Condicionales en JavaScript"
   description="Condicionales"
@@ -33,7 +33,7 @@ if (edad >= 18) {
   console.log("Eres menor de edad");
 }
 ```
-
+## Juego del número secreto
 <NumeroSecreto client:load />
 
 ## Switch
@@ -80,4 +80,4 @@ switch (fruta) {
 }
 ```
 
-</Layout>
+</ArticuloLayout>
