@@ -28,7 +28,6 @@ h2 {
   color: white;
   margin: 2rem 0rem;
   background: #a9b39b;
-  border-radius: 4px;
   padding: 4px 20px;
 }
 
@@ -36,8 +35,22 @@ h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 1rem 0 0.5rem;
-  padding: 0px 4px;
-  background: #d7bcb5;
+  padding: 4px 20px;
+  background: #d3cdb3;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 4px 20px;
+  border-bottom: solid #5b6851 3px;
+  border-left: solid #5b6851 3px;
+  margin: 2rem 0rem;
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 4px 20px;
+  margin: 2rem 0rem;
 }
 
 /* Párrafos */
@@ -61,7 +74,7 @@ li {
 }
 
 aside ul {
-  margin:0;
+  margin: 0;
 }
 
 aside ul li {
@@ -69,18 +82,15 @@ aside ul li {
   margin: 0px;
   padding: 8px 0px;
   border-bottom: 1px solid #4f5d44;
-
 }
 
 aside ul li a {
-  font-weight: 600
+  font-weight: 600;
 }
-
-
 
 /* Enlaces */
 a {
-  color: #000000; 
+  color: #000000;
   text-decoration: none;
 }
 
@@ -106,5 +116,4 @@ figure > img {
 }
 pre {
   padding: 12px 20px;
-  border-radius: 8px;
 }

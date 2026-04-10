@@ -89,19 +89,19 @@ console.log(sum);
 
 ## Métodos de los Arrays
 
-- **.pusch()**
+### **.pusch()**
 
 El método push es una poderosa función de JavaScript que permite agregar uno o más elementos al final de un array. Al hacer esto, no solo se modifica el array original, sino que también se devuelve la nueva longitud del mismo.
 
-- **.pop()**
+### **.pop()**
 
 Contrario al método push, pop remueve el último elemento de un array, devolviendo dicho elemento y modificando el array original en el proceso
 
-- **.map()**
+### **.map()**
 
 .map() es un método de los arrays en JavaScript que se usa para recorrer una lista y crear una nueva lista transformando cada elemento.
 
-**¿Qué hace .map()?**
+#### ¿Qué hace .map()?
 
 **Toma cada elemento** del array, le **aplica una función** y devuelve un nuevo array con los resultados.
 
@@ -126,9 +126,9 @@ const elementos = tags.map((tag) => {
 });
 ```
 
-- **forEach()**
+### **forEach()**
 
-Recorre cada elemento del array y ejecuta una función, pero NO devuelve un nuevo array. Sirve para hacer acciones, no para transformar datos por ende no retorna nada. Se usa forEach() cuando:
+**Recorre cada elemento del array y ejecuta una función**, pero NO devuelve un nuevo array. Sirve para hacer acciones, no para transformar datos por ende no retorna nada. Se usa forEach() cuando:
 
 - Para mostrar datos (console.log)
 - Modicicar algo externo
@@ -150,8 +150,9 @@ productos.forEach((p) => {
 });
 ```
 
-- **filter()**
-  **Crea un nuevo array** con los elementos que cumplen una condición _true_. Es como decir "de todo esto, solo quiero algunos".
+### **filter()**
+
+**Crea un nuevo array** con los elementos que cumplen una condición _true_. Es como decir "de todo esto, solo quiero algunos".
 
 ```js
 //Ejemplo
@@ -161,19 +162,15 @@ const numeros = [1, 2, 3, 4, 5];
 const pares = numeros.filter((n) => n % 2 === 0);
 ```
 
-- **reduce()**
+### reduce()
 
-Reduce todo el array a un solo valor. Este puede ser un número, string u objeto
+**Reduce todo el array a un solo valor**. Este puede ser un número, string u objeto
 
 ```js
 //Sintaxis
-
 array.reduce((acumulador, elemento)=>{
   return nuevoValor;
 }valorInicial);
-
-/
-
 ```
 
 - **Acumulador** es la variable propia de la función que almacena el valor
@@ -210,12 +207,13 @@ console.log(palabrasRepetidas);
 //retorna  { manzana: 1, banana: 1, mora: 2 }
 ```
 
-- **Método find() y findIndex**
+### **Método find() y findIndex**
 
 Son métodos que no modifican el array pero ayudan a encontrar elementos dentro de el.
 
-- find()
-  Busca el primer elemento que cumpla una condición Y lo devuelve directamente (no un array). Este espera una función como argumento que aplique la condición
+#### find()
+
+Busca el primer elemento que cumpla una condición Y lo devuelve directamente (no un array). Este espera una función como argumento que aplique la condición
 
 ```js
 //sintaxis
@@ -232,7 +230,7 @@ console.log(firstNumberGreaterThan10);
 // Imprime 15
 ```
 
-- findIndex()
+#### findIndex()
 
 Busca el primer elemento que cumple una condición. Pero en vez de devolver el valor… devuelve su posición (índice). **Si este no encuentra nada devuelve en -1**
 
@@ -244,16 +242,17 @@ const index = numeros.findIndex((n) => n > 25);
 //Resultado 2  (Porque 30 es el primer número > 25)
 ```
 
-- ¿Para qué sirve?
-  - Saber la posición de un elemento en un array
+#### ¿Para qué sirve?
 
-  - Eliminar elementos (splice)
+- Saber la posición de un elemento en un array
 
-  - Editar elementos específicos
+- Eliminar elementos (splice)
 
-  - Trabajar con listas en UI (React, etc.)
+- Editar elementos específicos
 
-- **Método slice()**
+- Trabajar con listas en UI (React, etc.)
+
+### **Método slice()**
 
 Crea una copia de una parte del array sin modificar el original.
 
@@ -272,12 +271,65 @@ const resultado = numeros.slice(1, 4);
 // devuleve [2,3,4]
 ```
 
-- ¿Para que sirve?
+#### ¿Para que sirve?
+
 - Cortar una parte de un array
 
 - Limitar resultados ( ej: solo mostrar 5 elementos)
 
 - Copiar Arrays sin modificarlos
 
-- Paginación
-  </ArticuloLayout>
+- Paginación4
+
+### **Spread Operator (...)**
+
+Permite expandir (expandir = “abrir”) arrays, objetos o valores en partes individuales.
+
+```js
+//Sintaxis
+
+...valor
+
+//Se usa dentro de:
+[...array]
+{...objeto}
+funcion(...argumentos)
+```
+
+#### ¿Como se usa comúnmente?
+
+- Copiar un array
+
+```js
+const numeros = [1, 2, 3];
+const copia = [...numeros];
+```
+
+- Unir Arrays
+  ```js
+  const a = [1, 2];
+  const b = [3, 4];
+  const resultado = [...a, ...b]; // [1,2,3,4]
+  ```
+- Copiar objetos
+
+```js
+const user = { name: "Anna", age: 20 };
+const copia = { ...user };
+```
+
+- Modificar sin mutar
+
+```js
+const user = { name: "Anna", age: 20 };
+const actualizado = { ...user, age: 21 };
+```
+
+#### Condiciones de uso
+
+- Solo funciona con arrays, objetos , iterables (string,etc)
+- Hace copias superficiales no profundas
+- Si repites propiedades en objetos , la ultima gana
+- **_..._** No transforma datos, solo expande/copia datos
+
+</ArticuloLayout>
